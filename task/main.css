@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Dynamic background gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container for login and register form */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on form container */
+.login-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Form Header */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Form group (input + label) */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Input field focus effect */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #74ebd5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background: #ACB6E5;
+}
+
+/* Text Links */
+a {
+    color: #74ebd5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Link hover effect */
+a:hover {
+    color: #ACB6E5;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
